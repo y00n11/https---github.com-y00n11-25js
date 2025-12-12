@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 연산자 실습</title>
+</head>
+<body>
+    <script>
+        /*
+        let x=10;
+        let y=20;
+        */
+
+
+        let x=Number(prompt("첫번째 정수 입력"))
+        let y=Number(prompt("두번째 정수 입력"))
+        /*
+        또는 
+        let x=prompt("첫번째 정수 입력")
+        let y=prompt("두번째 정수 입력")
+        x=Number(x)
+        y=Number(y)
+        */
+
+
+        document.write(`${x}+${y}=${(x+y)}<br>`);
+        document.write(`${x}-${y}=${(x-y)}<br>`);
+        document.write(`${x}*${y}=${(x*y)}<br>`);
+        document.write(`${x}/${y}=${(x/y)}<br>`);
+        document.write(`${x}%${y}=${(x%y)}<br>`);
+        document.write(`${x}**${y}=${(x**y)}<br>`);
+
+        document.write(`-${x}=-${x}<br>`);
+        document.write(`+${x}=+${x}<br>`);
+        document.write(`x++ = ${x++}<br>`); // x=x+1, 즉 const는 작동 x
+        document.write(`++x = ${++x}<br>`);
+        document.write(`x-- = ${x--}<br>`);
+    </script>
+    
+</body>
+</html>

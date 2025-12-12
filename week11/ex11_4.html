@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map()메소드</title>
+</head>
+<body>
+    <h1>map()메소드는 콜백함수에서 리턴한 값드을 기반으로 새로운 배열 만듦</h1>
+    <script>
+        let numbers = [10, 20, 30, 40, 50]
+
+        let snumbers = numbers.map(function(value) {
+            return value*value 
+        })
+
+        snumbers.forEach(function (value) {
+            document.write(`${value}<br>`)
+            })
+            //콘솔 말고 도큐먼트는 이런 형식 사용
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forEach()메소드</title>
+</head>
+<body>
+    <h1>forEach 메소드는 배열이 갖고 있는 함수>> 배열 내부의 요소를 사용, 콜백 함수를 호출</h1>
+    <!--  객관식 문제 ㅇㅇ -->
+    <script>
+        const numbers = [11, 12, 13, 14, 15]
+
+        numbers.forEach(function (value, index, array) { 
+            document.write(`${array}<br>`)
+            document.write(`${index}번째 요소: ${value}<br>`)
+        }) 
+
+        document.write(`<hr>`)
+        numbers.forEach(function(value) {
+            if (value % 2 == 0)
+            document.write(`짝수: ${value}<br>`)
+        })
+    </script>
+</body>
+</html>

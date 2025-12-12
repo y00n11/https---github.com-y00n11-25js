@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt() 함수 응용</title>
+</head>
+<body>
+    <p>달러를 입력 받아서 원화로 변환하는 프로그램 작성</p>
+    <script>
+    const dollar=Number(prompt('달러 입력'))
+    const ex= 1393.93
+    const won= dollar * ex
+    const exwon= won.toLocaleString('ko-KR');
+
+    document.write(`${dollar}의 환전 금액은 ${exwon}`)
+
+
+    alert(`${won}입니다`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for반복문연습</title>
+</head>
+<body>
+    <h2>for 반복문 연습</h2>
+    <p>반복문 이용하여 1부터 100까지 정수들의 합</p>
+    <script>
+        /** 0+1+2+3````+100
+            0=sum
+            sum=i  **/
+
+        /*
+        let sum=0
+        for (let i =1; i<=100; i++)
+            sum +=i
+        document.write(`전체 합: ${sum}<br>`)
+
+        let evenSum=0
+        for (let i =2; i<=100; i+=2)
+            evenSum += i
+        document.write(`짝수 합: ${evenSum}<br>`)
+
+        let oddSum=0
+        for (let i =1; i<=100; i+=2)
+            oddSum+=i
+        document.write(`홀수 합: ${oddSum}<br>`)
+        */
+
+        let sum = 0
+        let evenSum= 0
+        let oddSum= 0
+        for (let i =1; i <=100; i++){ //{}없으면 다음 한줄만 반복문에 해당됨
+            sum += i
+            if (i % 2 == 0)
+                evenSum +=i
+            else
+                oddSum += i
+        }
+        document.write(`전체 합:${sum}<br>`)
+        document.write(`짝수 합:${evenSum}<br>`)
+        document.write(`홀수 합:${oddSum}<br>`)
+    </script>
+</body>
+</html>

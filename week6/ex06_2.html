@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of 구문(파이썬은 없음)</title>
+</head>
+
+<body>
+<script>
+        const scores = [100, 60, 98, 86, 78]
+
+        for (const nums of scores) {
+            document.write(`<h3> ${nums}</h3>`)
+        }
+        //직접적으로 가져오는거라 {scores(nums)}가 아님(이건 인덱스 가져옴)
+
+        let sum = 0
+        let nums = 0
+        let count = 0
+        let max = scores[0]
+
+        for (const nums of scores) {
+            document.write(`<h3>${nums}</h3>`)
+            sum += nums
+
+            if (nums < 80)
+                count++
+            
+            if (nums >= max)
+                max = nums
+    
+
+
+        }
+
+        let averge = sum / scores.length
+
+        document.write(`----------<br>`)
+        document.write(`평균:${averge}<br>`)
+        document.write(`과락:${count}<br>`)
+        document.write(`최대:${max}<br>`)
+
+
+    </script>
+</body>
+
+</html>

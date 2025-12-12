@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>콜백 함수</title>
+</head>
+<body>
+    <h1>콜백함수=매개변수로 전달하는 함수</h1>
+    <script>
+        function callThreeTimes(callback) {
+            for(let i = 0; i < 3; i++)
+            callback(i) // callback는 매개변수=함수
+        }
+
+        // 함수 호출
+        callThreeTimes(print) // print= 함수 이름 의미
+        function print(a) { // i,a 상관없음
+            document.write(`${a}번째 함수 호출<br>`)
+        }
+    </script>
+</body>
+</html>

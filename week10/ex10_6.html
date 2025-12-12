@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>함수 연습</h1>
+    <P>기본 매개변수 연습</P>
+
+    <script>
+        function earnings(name, wage=10030, hours=40)
+        {
+            document.write(`${name}님의 급여정보<br>`)
+            document.write(`-군무시간: ${hours}<br>`)
+            document.write(`-시급: ${wage}원<br>`)
+            document.write(`-급여: ${wage * hours}원<br>`)
+            document.write(`<br>`)
+        }
+
+        earnings('구름')
+        earnings('별', 11000)
+        earnings('한양', 10030, 52)
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter() 메소드</title>
+</head>
+<body>
+    <h1>filter()메소드=콜백 함수에서 리턴하는 값> true인 것들만  새로운 배열</h1>
+    <script>
+        
+        let numbers = [11, 12, 13, 14, 15]
+
+        let snumbers = numbers.filter(function(value, index, array) {
+            return value % 2 == 0
+        })
+        
+        for (let value of snumbers)
+        document.write(`${value}<br>`)
+        
+        /*
+        snumbers.forEach(function (value) {
+            document.write(`${value}<br>`)
+        })
+        */
+    </script>
+</body>
+</html>

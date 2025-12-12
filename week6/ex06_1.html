@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in 구문 연습</title>
+</head>
+
+<body>
+    <script>
+        const scores = [100, 60]
+        scores.push(89)
+        scores.push(95)
+        scores.push(78)
+        //document.write(scores)
+        /*
+        document.write(`<h3> ${scores[0]} </h3>`)
+        document.write(`<h3> ${scores[1]} </h3>`)
+        document.write(`<h3> ${scores[2]} </h3>`)
+        document.write(`<h3> ${scores[3]} </h3>`)
+        document.write(`<h3> ${scores[4]} </h3>`)
+        */
+
+        let sum = 0
+        for (const i in scores) {
+            document.write(`<h3> ${scores[i]} </h3>`)
+            sum = sum + scores[i]
+        }
+
+
+        /*
+        for (const i in scores)
+            document.write(`<h3> ${scores[i]} </h3>`)
+        */
+        //[숫자] 적으면 고정 됨, i 적어야함
+
+        let count = 0
+        for (const i in scores) {
+            if (scores[i] >= 80) {
+                count++
+                //count+=1 
+            }
+        }
+        //document.write(`<h3>80점 이상: ${count}개 </h3>`)
+        document.write(`----------<br>`)
+        document.write(`총점:${sum}<br>`)
+        document.write(`<br>`)
+        document.write(`80점 이상 학생수: ${count}명`)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        함수연습/선언적함수
+    </h1>
+
+    <script>
+        //배열로 전달받은 데이터 중에서 최소값 구하여 출력
+
+        function min(array) {
+            let output = array[0]
+
+            for (const item of array) {
+                if (output > item)
+                    output = item
+            }
+            document.write(`최소값:${output}<br>`)
+        }
+
+        const testArray = [19, 6, 23, 89, 34]
+        min(testArray)
+    </script>
+
+    <hr>
+    <h3>익명함수</h3>
+    <script>
+        const MIN=function(array) {
+            let output = array[0]
+
+            for (const item of array) {
+                if (output > item)
+                    output = item
+            }
+            document.write(`최소값:${output}<br>`)
+        }
+
+        const TA = [19, 6, 23, 89, 34]
+        MIN(TA)
+    </script>
+</body>
+
+</html>

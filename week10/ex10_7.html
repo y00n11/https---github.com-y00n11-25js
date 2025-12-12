@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>기본 매개변수 연습
+        <script>
+            function isLeapYear(year = new Date().getFullYear()){
+                document.write(`매개변수: ${year}<br>`)
+                return (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+            }
+
+            document.write(`윤년일까요? ==> ${isLeapYear(2024)}<br>`)
+            document.write(`윤년일까요? ==> ${isLeapYear()}<br>`)
+        </script>
+
+        
+    </h1>
+</body>
+</html>

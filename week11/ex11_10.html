@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>타이머 끄기</title>
+</head>
+<body>
+    <script>
+        let count = 0
+        let id = setInterval(() => {
+            document.write(`${count}번째 실행<br>`)
+            count++
+
+            if (count == 2) {
+                document.write(`타이머 종료`)
+                clearInterval(id)
+            }
+        }, 3 * 1000)
+
+        /*
+        setTimeout(() => {
+            document.write(`타이머 종료<br>`)
+            clearInterval(id)
+        }, 20 * 1000)
+        */
+    </script>
+</body>
+</html>

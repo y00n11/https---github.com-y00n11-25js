@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>함수/산언적 함수 연습</h1>
+    <script>
+        //1부터 100까지 합 구하는 함수
+
+        document.write("선언적 함수 사용 <br>")
+
+        function sumALL(a, b) {
+            let output = 0
+
+            for (let i = a; i <= b; i++)
+                output += i
+            document.write(output)
+
+        }
+
+        sumALL(1, 100)
+        document.write("<br>")
+        sumALL(1, 20)
+        document.write("<br>")
+        sumALL(100, 1000)
+        document.write("<br>")
+    </script>
+
+    <hr>
+    <h3>익명함수 연습</h3>
+    <script>
+        //a부터 b까지 누적합 구하는 함수를 익명 함수로 만들기
+
+        const ALLsum = function (a, b) {
+
+            let OUTPUT = 0;
+
+            for (let i = a; i <= b; i++)
+                OUTPUT += i;
+            document.write(OUTPUT)
+        }
+
+        sumALL(1, 100)
+        document.write("<br>")
+        sumALL(1, 20)
+        document.write("<br>")
+        sumALL(100, 1000)
+        document.write("<br>")
+    </script>
+
+</body>
+
+</html>

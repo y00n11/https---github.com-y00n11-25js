@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11_2</title>
+</head>
+<body>
+    <script>
+    function callThreeTimes(callback) {
+        for(let i=0; i < 3; i++)
+        callback(i) 
+    } // 셤문제 형식+비워두고 맞추기
+    callThreeTimes(function (i) {
+        document.write(`${i}번쨰 호출<br>`)
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>함수 연습</h1>
+    <p>a연도가 윤년 ox 확인
+        a=윤년 1 반환
+        a=윤년x 0 반환
+    </p>
+
+    <script>
+        //윤년 조건
+        //조건 1= 400으로 나누어 떨어짐
+        //조건 2= 4로 나누어 100으로 나누어지지 않는 해
+
+        function LeapYear(a) {
+
+            if (a % 400 == 0 || (a % 4 == 0 && a % 100 != 0))
+                return true
+            else
+                return false
+
+            /* 간단한 버전
+            return (a % 400 == 0 || (a % 4 == 0 && a % 100 != 0))
+            */
+        }
+
+        if (LeapYear(2025))
+            document.write(`2025년은 윤년입니다<br>`)
+        else
+            document.write(`2025년은 평년입니다<br>`)
+
+        /*
+        document.write("2025년 윤년 여부:" + LeapYear(2025) + "<br>")
+        document.write("2024년 윤년 여부:" + LeapYear(2024) + "<br>")
+        */
+
+        
+    </script>
+</body>
+
+</html>

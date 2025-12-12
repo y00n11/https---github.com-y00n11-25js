@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>함수 연습</h1>
+    <p>a,b 두 수 중에서 큰 수 반환하는 함수</p>
+
+    <script>
+
+        /*
+        const MAX = function (array) {
+            let output = array[0]
+
+            for (const item of array) {
+                if (output < item)
+                    output = item
+            }
+            document.write(`최대값:${output}<br>`)
+        }
+
+        const TA = [19, 6, 23, 89, 34]
+        MAX(TA)
+        */
+
+        function max(a,b){
+
+            let output
+
+            if (a>b) output =a
+            else output =b
+
+            return output
+        }
+
+        document.write(`최대값: ${max(3,11)}<br>`)
+        document.write(`최대값: ${max(56,32)}<br>`)
+        document.write(`최대값: ${max(466756,67567833)}<br>`)
+    </script>
+</body>
+
+</html>

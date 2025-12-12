@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>화살표 함수</title>
+</head>
+<body>
+    <h1>화살표 함수는 function 키워드 대신 화살표를 사용</h1>
+    <script>
+        /*
+        let print = function (i) { 익명함수
+            document.write(`${i}번째 호출<br>`)
+        }
+        */
+
+        let print = (i) => { // function 생략, 화살표 사용
+            document.write(`${i}번째 호출<br>`)
+        }
+
+        for(let i = 0; i < 3; i++)
+            print(i)
+    </script>
+</body>
+</html>

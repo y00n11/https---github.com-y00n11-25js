@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        {font-family:monospace;}
+    </style>
+</head>
+<body>
+    <h1>중첩반복문 마지막 연습</h1>
+
+    <script>
+        let output=''
+
+        for (let i=1; i<15; i++) {
+            for (let j=15; j>i; j--)
+                output+=' &nbsp; '
+            for (let k=1; k<=2*i-1; k++)
+                output+='*'
+            output+='<br>'
+        }
+
+        document.write(output)
+        
+    </script>
+</body>
+</html>
